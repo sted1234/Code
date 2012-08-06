@@ -1,0 +1,27 @@
+﻿@{
+    string currentControllerName = this.ViewContext.RouteData.Values["Controller"].ToString();
+    string homeController = "Home";
+    string topDealsController = "TopDeals";
+
+    string normalHeaderCSSClass = "header";
+    string activeHeaderCSSClass = "activeTab";
+    string appliedCSSClass = normalHeaderCSSClass;
+}
+
+
+@if (currentControllerName == homeController)
+{ appliedCSSClass = activeHeaderCSSClass; }
+else
+{ appliedCSSClass = normalHeaderCSSClass; }
+
+@Html.ActionLink("Search The Deals", "Index", "Home", null, new { @class = appliedCSSClass })
+
+
+@if (currentControllerName == topDealsController)
+{ appliedCSSClass = activeHeaderCSSClass; }
+else
+{ appliedCSSClass = normalHeaderCSSClass; }
+
+<!-- @Html.ActionLink("Top Deals", "Index", "TopDeals", null, new { @class = appliedCSSClass }) -->
+
+

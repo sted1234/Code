@@ -1,0 +1,37 @@
+﻿@using SearchDeals.Models
+
+@model IEnumerable<DealItem>
+
+
+@{
+    Layout = "~/Views/Shared/_ResultsLayout.cshtml";
+    ViewBag.Title = "Deals";
+}
+
+
+<div style="text-align: center">
+@using(@Html.BeginForm("Search","Home", FormMethod.Get))
+{
+    <br />
+    
+    <a href="@Url.RouteUrl(new { controller = "Home", action = "Index" })">
+        <img alt="Deals Chain" src="../../Content/Images/DealsLogo150By50.png" style="vertical-align:bottom; padding: 0 10px" />
+    </a>
+    
+    
+    @Html.TextBox("query", null, new { @class = "resultspagetextbox" }) 
+    
+    <input type="submit" id="txtSearchBox" value="Show Deals" class="searchbutton" />
+    
+}
+</div>
+
+
+<br /><br />
+
+<h2>Recent Deals</h2>
+<br /><br />
+@foreach (var item in Model)
+{
+    Html.RenderPartial("FeedSearchResult", item);
+}

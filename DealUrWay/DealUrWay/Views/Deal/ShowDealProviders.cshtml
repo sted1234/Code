@@ -1,0 +1,19 @@
+﻿@using DealUrWay.Controllers
+@model IEnumerable<string>
+
+
+@{
+    ViewBag.Title = "Deal Providers";
+}
+
+<h2>Deal Providers</h2>
+
+<ul>
+@foreach (string provider in Model)
+{
+    <li>@Html.ActionLink(provider, "GetDeals", "Deal", new { dealProvider = provider }, null)</li>
+}
+</ul>
+
+
+<p>@Html.ActionLink("Search", "Search")</p>

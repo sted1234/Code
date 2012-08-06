@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Feed Research</title>
+  <subtitle type="text">Example Feed</subtitle>
+  <id>http://dealschain.com</id>
+  <rights type="text">Sted</rights>
+  <updated>2012-08-01T21:32:08-07:00</updated>
+  <generator>Deals Chain</generator>
+  <link rel="self" type="text/html" title="Test Feed" href="http://dealschain.comfeeds/myfeed.xml" />
+  <link type="text/html" title="Deals Research" href="http://dealschain.com/" />
+  <entry>
+    <id>http://google.com</id>
+    <title type="text">This is a tile</title>
+    <published>2012-08-01T21:32:08-07:00</published>
+    <updated>2012-08-01T21:32:08-07:00</updated>
+    <link href="http://google.com/" />
+    <content type="html">&lt;b&gt;Hi There&lt;b/&gt;</content>
+  </entry>
+  <entry>
+    <id>http://google.com</id>
+    <title type="text">This is a tile</title>
+    <published>2012-08-01T21:32:08-07:00</published>
+    <updated>2012-08-01T21:32:08-07:00</updated>
+    <link href="http://google.com/" />
+    <content type="html">&lt;b&gt;Hi There&lt;b/&gt;</content>
+  </entry>
+  <entry>
+    <id>http://google.com</id>
+    <title type="text">This is a tile</title>
+    <published>2012-08-01T21:32:08-07:00</published>
+    <updated>2012-08-01T21:32:08-07:00</updated>
+    <link href="http://google.com/" />
+    <content type="html">&lt;b&gt;Hi There&lt;b/&gt;</content>
+  </entry>
+</feed>

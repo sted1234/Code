@@ -1,0 +1,196 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	background: white;
+}
+
+strong {
+	font-weight:bold;
+}
+
+em {
+	font-style:oblique;
+}
+
+
+.aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+h1 {font-size:180%;}
+h2 {font-size:150%;}
+h3 {font-size:125%;}
+h4 {font-size:100%;}
+h5 {font-size:90%;}
+h6 {font-size:80%;}
+
+/*End RESET - Begin Full Width CSS*/
+
+
+
+	body {
+		background:white;
+		font:13px Helvetica,  Arial,  sans-serif
+	}
+
+	.wrap {
+		margin:0 auto;
+		/*width:900px;*/
+	}
+	
+	#header, #footer {
+		float:left;
+		padding:7px 0;
+		min-width:100%;
+	}
+	
+	#header {
+		background:#332F31;
+		font: 
+	}
+	
+	
+	#header p {
+		float:right;
+		width:400px;
+		margin:0;
+	}
+	
+	#content {
+		padding:15px 10px;
+		clear:both;
+	}
+	
+	#footer {
+		background:#E6E1E3;
+		text-align: right;
+		position: absolute; 
+		bottom: 0px;
+        color:white;
+		/*To anchor to bottom of page uncomment the following lines:*/
+		/*position:fixed;
+		bottom:0;*/
+	}
+	
+	a.footer {
+		color: #918E90; padding: 0 12px; text-decoration: none; 
+	}
+
+    .headerElements
+    {
+        padding: 0px 5px;
+        font-weight: bold;
+        color: White;   
+    }
+
+    a.header
+    {
+        color: #C9C5C7; font-weight: bold; padding: 0 12px; text-decoration: none; 
+    }
+
+    a.header:link {}
+    a.header:visited {}
+    a.header:hover {color: White; }
+    a.header:active {}
+
+    a.footer:hover { color: #423C3E; }
+    
+    a.activeTab
+    {
+        color: White; font-weight: bold; padding: 0 12px; text-decoration: none; 
+    }
+
+    .showdealsmouseover
+    {
+        color: #333333; border-style: solid; border-color: #BBBBBB;
+    }
+    
+   input.searchbutton
+    {
+       font-size:20px;
+       font-family:Arial;
+       font-weight: bold;
+       width:125px;
+       height:40px;
+       background-color:#EEEEEE;
+       vertical-align: middle;
+       color: #4D4954;
+       border-style:none;
+       cursor: pointer;
+    }
+    
+    input.searchbuttonmouseover
+    {
+        border-style: solid; border-color: #AE88E5;
+    }
+    
+    input.searchbuttonmouseout
+    {
+        border-style:none;
+    }
+
+    input.homepagetextbox
+    {
+       width:655px;
+       height:34px;
+       font-size:large;
+       vertical-align: middle;
+       border: solid 1px #AE88E5;
+    }
+
+    input.resultspagetextbox
+    {
+       width:455px;
+       height:34px;
+       font-size:large;
+       vertical-align: middle;
+       border: solid 1px #AE88E5;
+    }
+    
+    
+    div.topbox
+    {
+        text-align: center;
+        position: relative;
+    }
+    
+    div.preserve
+    {
+        position: relative;
+        height: 150px;
+        margin: 9px auto 2px auto;
+        visibility: hidden;
+        color:#336666;
+    }
+    

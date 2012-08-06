@@ -1,0 +1,17 @@
+﻿@using DealUrWay.Controllers
+@model DealUrWay.BusinessObjects.DealItem
+
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    
+    <p>Search for item name @Html.TextBoxFor(x => x.Title)</p>
+    
+    <input type="submit" value="Search" />
+}

@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "~/Views/Shared/_HomePageLayout.cshtml";
+    ViewBag.Title = "Deals Chain - Never Miss a Deal";
+}
+
+<div class="topbox">
+    <div class="preserve">
+    </div>
+    <div class="searchbox">
+        @using (@Html.BeginForm("Search", "Home", FormMethod.Get))
+        {
+            <br />
+            
+            <a href="@Url.RouteUrl(new { controller = "Home", action = "Index" })">
+                <img alt="Deals Chain" src="../../Content/Images/DealsLogoGrouped.png" style="vertical-align:bottom; padding: 0 10px" />
+            </a>
+            
+            @Html.TextBox("query", null, new { @class = "homepagetextbox" }) 
+            
+            <input type="submit" id="txtSearchBox" value="Show Deals" class="searchbutton" />
+        }
+    </div>
+</div>
+
+@section Footer
+{
+    @Html.Partial("_PartialFooter")           
+}

@@ -1,0 +1,23 @@
+﻿@using DealUrWay.Controllers
+@using DealUrWay.BusinessObjects
+
+@model IEnumerable<DealItem>
+
+@{
+    ViewBag.Title = "GetDeals";
+}
+
+<h2>GetDeals</h2>
+@{ int i = 0;}
+<ul>
+@foreach (DealItem item in Model)
+{
+    
+    if(i++ < 10)
+    {
+   <li>
+   @Html.HtmlLink(item.URI.ToString(), item.Title, null);
+   </li>
+        }
+} 
+</ul>
