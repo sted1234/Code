@@ -20,8 +20,10 @@ namespace DealUrWay.DealManager
             {
                 if (v.Name.Equals(request.Name, StringComparison.InvariantCultureIgnoreCase))
                 {
-                    request.FeedUrl = v.FeedUrl;
                     provider = (IDealProvider)BuildProvider(v.ProviderAssemblyName, v.ProviderClass);
+                    provider.FeedURL = v.FeedUrl;
+                    provider.Name = v.Name;
+                    provider.ConfigFile = v.ConfigurationFile;
                 }
             }
 

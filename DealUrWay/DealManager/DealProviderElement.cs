@@ -61,6 +61,18 @@ namespace DealUrWay.DealManager
             }
         }
 
+        [ConfigurationProperty("ConfigurationFile", IsRequired = false)]
+        public string ConfigurationFile
+        {
+            get
+            {
+                return this["ConfigurationFile"].ToString();
+            }
+            set
+            {
+                this["ConfigurationFile"] = value;
+            }
+        }
         
 
 

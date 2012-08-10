@@ -8,6 +8,5 @@ namespace DealUrWay.BusinessObjects
     public interface IDealRequest
     {
         string Name { get; set; }
-        string FeedUrl { get; set; }
     }
 }

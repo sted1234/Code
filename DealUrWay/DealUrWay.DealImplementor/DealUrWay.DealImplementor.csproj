@@ -60,9 +60,18 @@
       <Project>{ABDA6F5A-5CDF-4C2F-B491-0A1DBA7C23AF}</Project>
       <Name>DealUrWay.DealManager</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UtilityLibrary\UtilityLibrary.csproj">
+      <Project>{471658c4-b38a-446b-9516-ce5d29c3a71e}</Project>
+      <Name>UtilityLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DealProviders\LivingSocial.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DealProviderConfig\LivingSocialConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

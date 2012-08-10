@@ -17,6 +17,7 @@ namespace DealUrWay.DealImplementor
 
         string name;
         string feedUrl;
+        string configFile;
 
         public string Name
         {
@@ -43,6 +44,19 @@ namespace DealUrWay.DealImplementor
 
         }
 
+        public string ConfigFile
+        {
+            get
+            {
+                return configFile;
+            }
+            set
+            {
+                configFile = value;
+            }
+        }
+
+
         public DateTime LastModified
         {
             get
@@ -58,7 +72,7 @@ namespace DealUrWay.DealImplementor
 
         public virtual IDealResponse GetDeals(IDealRequest request)
         {
-            Uri feedUri = new Uri(request.FeedUrl);
+            Uri feedUri = new Uri(this.FeedURL);
             XmlReader reader = XmlReader.Create(feedUri.ToString());
             SyndicationFeed feed = null;
             List<DealItem> dealItems = new List<DealItem>();
@@ -87,6 +101,8 @@ namespace DealUrWay.DealImplementor
             return response;
             
         }
+
+
     }
 
 }

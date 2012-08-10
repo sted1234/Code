@@ -11,6 +11,7 @@ namespace DealUrWay.BusinessObjects
     {
         string Name { get; set; }
         string FeedURL { get; set; }
+        string ConfigFile { get; set; }
         DateTime LastModified { get; set; }
 
         IDealResponse GetDeals(IDealRequest request);
