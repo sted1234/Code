@@ -1,0 +1,1 @@
+This is a OPML snapshot of all subscriptions. In case we mishandle the subscriptions, this will serve as backup.

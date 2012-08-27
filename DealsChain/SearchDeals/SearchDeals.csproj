@@ -148,6 +148,8 @@
     <Content Include="Feeds\TestFeed.xml" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Reference\google-reader-subscriptions.xml" />
+    <Content Include="Reference\ReadMe.txt" />
     <Content Include="Scripts\This\DealsJScript.js" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.5.1.js" />
