@@ -29,16 +29,14 @@ namespace SearchDeals.Models
 
         public DealsRepository()
         {
-            string username = ConfigurationManager.AppSettings["GMailUserName"];
-            string password = ConfigurationManager.AppSettings["GMailPassword"];
-            string source = ConfigurationManager.AppSettings["GMailSource"];
+            string username = Properties.Settings.Default.GMailUserName;
+            string password = Properties.Settings.Default.GMailPassword;
+            string source = Properties.Settings.Default.GMailSource;
 
             UserName = username;
             Password = password;
             Source = source;
-            DefaultDealCount = 10;
-            string defaultCount = ConfigurationManager.AppSettings["DefaultDealCount"];
-            Int32.TryParse(defaultCount, out defaultDealCount);
+            DefaultDealCount = Properties.Settings.Default.DefaultDealCount;
         }
 
         public IEnumerable<RawDealItem> GetDeals(string product)

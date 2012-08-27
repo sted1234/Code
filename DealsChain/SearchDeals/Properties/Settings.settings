@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SearchDeals.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GMailUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">affiliatested</Value>
+    </Setting>
+    <Setting Name="GMailPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Sudha123</Value>
+    </Setting>
+    <Setting Name="GMailSource" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DealsChain</Value>
+    </Setting>
+    <Setting Name="DefaultDealCount" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
