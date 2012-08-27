@@ -21,7 +21,7 @@ namespace AlvinAshcraftLinks
 
             object obj = new object();
 
-            ReaderService rdr = new ReaderService("affiliatested", "Sudha123", "Sandworks.Google.App");
+            ReaderService rdr = new ReaderService("username", "password", "Sandworks.Google.App");
             {
 
 
@@ -45,7 +45,7 @@ namespace AlvinAshcraftLinks
                         }
                         catch (Exception ex)
                         {
-                            rdr = new ReaderService("affiliatested", "Sudha123", "Sandworks.Google.App");
+                            rdr = new ReaderService("username", "password", "Sandworks.Google.App");
                             Console.WriteLine("************Failed********" + " " + line);
                         }
                     }

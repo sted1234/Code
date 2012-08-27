@@ -11,7 +11,7 @@ namespace AlvinAshcraftLinks
     {
         public static void Main(string[] args)
         {
-            using (ReaderService rdr = new ReaderService("affiliatested", "Sudha123", "Sandworks.Google.App"))
+            using (ReaderService rdr = new ReaderService("username", "password", "Sandworks.Google.App"))
             {
                 var o = rdr.Search("Sony Hdtv", "100");
                 Console.WriteLine(o);

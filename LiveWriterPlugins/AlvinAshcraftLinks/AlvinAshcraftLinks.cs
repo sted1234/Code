@@ -116,7 +116,7 @@ namespace AlvinAshcraftLinks
 
 
             // Subscribe to links now.
-            using (ReaderService rdr = new ReaderService("affiliatested", "Sudha123", "Sandworks.Google.App"))
+            using (ReaderService rdr = new ReaderService("username", "password", "Sandworks.Google.App"))
             {
                 List<Subscription> s = rdr.GetSubscriptions();
                 foreach (string link in feedLinks)
