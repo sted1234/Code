@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Configuration;
+using System.Web.Configuration;
 
 namespace SearchDeals
 {
@@ -35,6 +37,25 @@ namespace SearchDeals
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+            EncryptConfigSection("applicationSettings/SearchDeals.Properties.EncryptedSettings"); 
+        }
+
+        private void EncryptConfigSection(string sectionKey)
+        {
+            Configuration config = WebConfigurationManager.OpenWebConfiguration("/");
+            ConfigurationSection section = config.GetSection(sectionKey);
+            if (section != null)
+            {
+                if (!section.SectionInformation.IsProtected)
+                {
+                    if (!section.ElementInformation.IsLocked)
+                    {
+                        section.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
+                        section.SectionInformation.ForceSave = true;
+                        config.Save(ConfigurationSaveMode.Full);
+                    }
+                }
+            }
         }
     }
 }

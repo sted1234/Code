@@ -29,14 +29,14 @@ namespace SearchDeals.Models
 
         public DealsRepository()
         {
-            string username = Properties.Settings.Default.GMailUserName;
-            string password = Properties.Settings.Default.GMailPassword;
-            string source = Properties.Settings.Default.GMailSource;
+            string username = Properties.EncryptedSettings.Default.GMailUserName;
+            string password = Properties.EncryptedSettings.Default.GMailPassword;
+            string source = Properties.EncryptedSettings.Default.GMailSource;
 
             UserName = username;
             Password = password;
             Source = source;
-            DefaultDealCount = Properties.Settings.Default.DefaultDealCount;
+            DefaultDealCount = Properties.EncryptedSettings.Default.DefaultDealCount;
         }
 
         public IEnumerable<RawDealItem> GetDeals(string product)

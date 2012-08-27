@@ -22,41 +22,5 @@ namespace SearchDeals.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("affiliatested")]
-        public string GMailUserName {
-            get {
-                return ((string)(this["GMailUserName"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Sudha123")]
-        public string GMailPassword {
-            get {
-                return ((string)(this["GMailPassword"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("DealsChain")]
-        public string GMailSource {
-            get {
-                return ((string)(this["GMailSource"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int DefaultDealCount {
-            get {
-                return ((int)(this["DefaultDealCount"]));
-            }
-        }
     }
 }
